@@ -105,6 +105,17 @@ section.hero > button {
   text-transform: uppercase;
 }
 
+/* adds color to button on hover */
+section.hero > button:hover {
+  background-color: rgb(234, 18, 97);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+
 main article {
   padding: 48px 96px;
 }
@@ -176,10 +187,11 @@ span.tooltip span {
   line-height: 35px;
 }
 
+/*adds arrow to bottom of tool tip */
 span.tooltip span::after {
   content: " ";
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%; 
   left: 50%;
   margin-left: -10px;
   border-width: 10px;
