@@ -83,6 +83,12 @@ main > section.hero {
   /* make this banner stick to the top! */
 }
 
+section {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 section.hero > .call-to-action {
   font-size: 2rem;
   font-weight: 700;
@@ -103,9 +109,17 @@ main article {
   padding: 48px 96px;
 }
 
+main article p:first-of-type::first-letter {
+  font-size: 100px;
+  line-height: .75;
+  float: left;
+  padding: 0 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 48px;
 }
 
 main > article img {
