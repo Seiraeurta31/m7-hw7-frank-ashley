@@ -156,11 +156,35 @@ span.tooltip:focus {
 span.tooltip:hover > span,
 span.tooltip:focus > span {
   display: inline;
+  position: absolute;
+
 }
 
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
+  background-color: rgb(38, 68, 86);
+  padding: 20px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  margin-left: -120px;
+  bottom: 40px;
+  border-radius: 10px;
+  text-align: left;
+  color: white;
+  line-height: 35px;
+}
+
+span.tooltip span::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(38, 68, 86) transparent transparent transparent;
 }
 
 /* styling for tooltip bubble arrow */
