@@ -105,16 +105,6 @@ section.hero > button {
   text-transform: uppercase;
 }
 
-/* adds color to button on hover */
-section.hero > button:hover {
-  background-color: rgb(234, 18, 97);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 12px;
-  text-transform: uppercase;
-}
-
 
 main article {
   padding: 48px 96px;
